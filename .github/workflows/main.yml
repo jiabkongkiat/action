@@ -14,9 +14,9 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
             username: ${{ secrets.FTP_USERNAME }}
+            password: ${{ secrets.FTP_PASSWORD }}
             server: ${{ secrets.FTP_SERVER }}
             port: ${{ secrets.FTP_PORT }}
-            local_path: './static/*'
-            remote_path: '/var/www/app'
+            remote_path: '/var/www/jiab'
             sftp_only: true
-            password: ${{ secrets.FTP_PASSWORD }}
+            
